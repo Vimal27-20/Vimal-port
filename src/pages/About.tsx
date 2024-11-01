@@ -5,9 +5,8 @@ const About = () => {
     return (
         <div className="about-page">
             <div className="profile-card">
-                <img src="/path-to-your-image.jpg" alt="Profile" className="profile-image" />
-                <h1 className="profile-name">Your Name</h1>
-                <p className="profile-title">UX/UI Designer & Front-End Developer</p>
+                <h1 className="profile-name">Vimal Kumar Veeraragavan</h1>
+                <p className="profile-title">UX/UI </p>
                 <p className="profile-description">
                     With a passion for creating user-friendly, visually appealing designs, 
                     I specialize in bridging the gap between design and technology. I strive 

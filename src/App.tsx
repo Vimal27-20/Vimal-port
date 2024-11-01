@@ -3,8 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Blog from './pages/Blog';
-import Gallery from './pages/Gallery';
+import Gallery from './pages/Blog';
 import VideoGallery from './pages/VideoGallery';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
@@ -18,7 +17,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/video-gallery" element={<VideoGallery />} />
         <Route path="/contact" element={<Contact />} />

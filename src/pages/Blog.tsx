@@ -1,23 +1,43 @@
-import '../styles.css';
+import React, { useState } from 'react';
+import './Blog.css';
+import photos1 from './../images/myphoto.jpeg';
+import photos2 from './../images/testimg.jpg';
+import photos3 from './../images/stair-story-1.jpg';
+import photos4 from './../images/flower.jpg';
 
-const Blog = () => {
+const Blog: React.FC = () => {
+  const images = [
+     photos1,
+     photos2,
+     photos3,
+     photos4
+    
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
-    <div className="container">
-      <h1>Blog</h1>
-      <div className="card">
-        <h2>Latest Post: The Future of Web Development</h2>
-        <p>
-          Web development is constantly evolving. In this blog post, we explore the latest trends and technologies that are shaping the future of the web.
-        </p>
+    <section className="gallery-section"id='Gallery'> 
+      <h2>Design Gallery</h2>
+      <div className="gallery-container">
+        <img src={images[currentIndex]} alt={`Gallery Image ${currentIndex + 1}`} className="gallery-image" />
+        <div className="button-container">
+          <button className="gallery-button" onClick={handlePrevious}>Previous</button>
+          <button className="gallery-button" onClick={handleNext}>Next</button>
+        </div>
       </div>
-      <div className="card">
-        <h2>How UX Design Impacts Your Business</h2>
-        <p>
-          A great user experience is key to the success of any product. Learn how UX design can improve customer satisfaction and boost your business.
-        </p>
-      </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default Blog;

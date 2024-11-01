@@ -1,0 +1,17 @@
+body{
+ background-color: #202521;
+
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ff4500;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-bottom: 100vh solid #ff4500;
+}

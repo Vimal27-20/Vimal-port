@@ -1,0 +1,105 @@
+/* Resume Container */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #fff, #f9f9f9);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-title {
+    font-size: 2.5rem;
+    color: #FF6347;
+    margin-bottom: 5px;
+}
+
+.resume-subtitle {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.resume-contact {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Section Styles */
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #FF6347;
+    border-bottom: 2px solid #FF6347;
+    padding-bottom: 5px;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.timeline-job-title {
+    font-size: 1.2rem;
+    color: #FF6347;
+    margin-bottom: 5px;
+}
+
+.timeline-company {
+    font-size: 1rem;
+    color: #555;
+}
+
+.timeline-description {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Education Styles */
+.education-item {
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+.skills-list, .certifications-list, .projects-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-list li, .certifications-list li, .projects-list li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}

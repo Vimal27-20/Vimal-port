@@ -3,6 +3,7 @@
 
 .Profilepiccontainer{
     
+    
     height: 50vh;
     width: 50vh;
     border-radius: 25vh;
@@ -11,6 +12,7 @@
 
 }
 .Profilepiccontainer > img{
+    
 
     object-fit:cover;
     aspect-ratio: 433/577;
@@ -19,6 +21,7 @@
 }
 @media screen and (max-width:1290px) {
     .home-container{
+        
         flex-direction:column;
         align-items: center;
         gap: 50px;
@@ -28,6 +31,7 @@
 }
 @media screen and (min-width:1291px) {
     .home-container{
+        
         flex-direction:row;
         align-items: center;
         gap: 50px;
@@ -37,6 +41,7 @@
 }
 .home-container {
     /* Correct relative path */
+    
     background-size: cover;
     background-position: center;
     min-height: 100vh; /* Full viewport height */
@@ -49,6 +54,7 @@
 
 /* Add background blur effect using a pseudo-element */
 .home-container::before {
+    
     content: "";
     position: absolute;
     top: 0;
@@ -64,6 +70,7 @@
 
 /* Home Section (Welcome Section) */
 .home-section {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,6 +84,7 @@
 }
 
 .home-title {
+    
     font-size: 3rem;
     font-weight: bold;
     color: #FFEB3B;

@@ -8,7 +8,7 @@ const Resume = () => {
                 <h1 className="resume-title">Vimal Kumar Veeraragavan</h1>
                 <p className="resume-subtitle">UX/UI Designer</p>
                 <p className="resume-contact">
-                    Email: vimalkumarveeraraghavan@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/vimalkumar27102000" target="_blank" rel="noopener noreferrer">linkedin.com/in/vimalkumar27102000</a> | GitHub: <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">github.com/your-profile</a>
+                    Email: vimalkumarveeraraghavan@gmail.com | LinkedIn: <a href="https://github.com/Vimal27-20" target="_blank" rel="noopener noreferrer">github.com/your-profile</a>
                 </p>
             </header>
 

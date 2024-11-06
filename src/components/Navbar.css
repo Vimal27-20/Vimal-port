@@ -18,8 +18,9 @@
 
 /* Logo Image Styles */
 .logo-image {
-    height: 50px; /* Adjust height as needed */
-    margin-right: 15px; /* Space between logo and Resume button */
+    height: 124px; /* Adjust height as needed */
+    width: 150px;
+    margin-right: 5px; /* Space between logo and Resume button */
     object-fit: contain; /* Ensures the logo retains its aspect ratio */
 }
 

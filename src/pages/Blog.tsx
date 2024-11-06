@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import './Blog.css';
 import photos1 from './../images/myphoto.jpeg';
-import photos2 from './../images/testimg.jpg';
-import photos3 from './../images/stair-story-1.jpg';
-import photos4 from './../images/flower.jpg';
+import photos5 from './../Images/1.jpg';
+import photos6 from './../Images/2.jpg';
+import photos7 from './../Images/3.jpg';
+
+import photos9 from './../Images/5.jpg';
 
 const Blog: React.FC = () => {
   const images = [
-     photos1,
-     photos2,
-     photos3,
-     photos4
+     photos1,photos5,photos6,photos7,photos9
     
   ];
 

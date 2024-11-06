@@ -3,14 +3,14 @@ import './Project.css';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A brief description of Project One. This project involved using modern web technologies to create a responsive and interactive application.',
+    title: 'User Centred Design Exploration and Prototyping',
+    description: 'Applying Creative Techniques and Expanding the Design possibilities.',
     link: '#',
   },
   {
     title: 'Project Two',
     description: 'A brief description of Project Two. This project involved working with APIs and complex data to create a user-friendly experience.',
-    link: '#',
+    link: '#https://drive.google.com/file/d/17qYDQXPjxE1y_VkKxWbQk5MSD0SogV4b/view?usp=sharing',
   },
   {
     title: 'Project Three',

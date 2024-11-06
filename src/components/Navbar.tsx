@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css'; // Ensure this path is correct
+import logo from "../Images/V-removebg-preview.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo-container">
         <Link to="/" className="navbar-logo">
-          MyPortfolio
+          <img className="logo-image"src={logo}></img>
         </Link>
         <Link to="/resume" className="resume-btn">Resume</Link>
       </div>

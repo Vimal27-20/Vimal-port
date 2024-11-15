@@ -13,7 +13,15 @@ const About = () => {
                     to deliver impactful and accessible experiences through innovative solutions.
                 </p>
             </div>
-
+            <div className='skills-section'>
+                <h3 className="section-title">Skills</h3>
+                <ul className="skill-container">
+                    <li className="skill">UX/UI Design</li>
+                    <li className="skill">JavaScript & React</li>
+                    <li className="skill">Prototyping</li>
+                    <li className="skill">Responsive Design</li>
+                </ul>
+            </div>
             <div className="skills-section">
                 <h2 className="section-title">My Skills</h2>
                 <div className="skill">

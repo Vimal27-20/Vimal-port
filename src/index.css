@@ -8,9 +8,9 @@
 }
 
 body, html {
-  height: 100%;
+  height: max-content;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #FF8C00, #FFD700);
+  background: #999999;
   /* background-image: url('./Images/top-view-frames-with-black-pebbles.jpg'); */
   background-size: cover;         /* Scale image to cover entire element */
   background-position: center;    /* Center the image */

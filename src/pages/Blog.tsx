@@ -1,42 +1,64 @@
-import React, { useState } from 'react';
-import './Blog.css';
-import photos1 from './../images/myphoto.jpeg';
-import photos5 from './../Images/1.jpg';
-import photos6 from './../Images/2.jpg';
-import photos7 from './../Images/3.jpg';
 
-import photos9 from './../Images/5.jpg';
+import { useNavigate } from "react-router-dom";
+import "./Blog.css";
 
-const Blog: React.FC = () => {
-  const images = [
-     photos1,photos5,photos6,photos7,photos9
-    
+const Blog = () => {
+  const navigate = useNavigate();
+
+  const blogPosts = [
+    {
+      id: 1,
+      title: "Tree-Chair-Aesthetic: My Journey of Capturing Nature’s Serenity",
+      date: "May 17, 2023",
+      author: "Admin",
+      description:
+        "This particular shot, which I call the Tree-Chair-Aesthetic, encapsulates everything I adore about nature photography....",
+      image: "https://via.placeholder.com/300x200?text=Blog+1",
+      views: 222,
+      readTime: "2 min read",
+    },
+    {
+      id: 2,
+      title: "The Stair-Life: Finding Beauty in the Overlooked",
+      date: "May 16, 2023",
+      author: "Admin",
+      description:
+        "The Stair-Life stands out as a deeply personal and reflective shot....",
+      image: "https://via.placeholder.com/300x200?text=Blog+2",
+      views: 310,
+      readTime: "3 min read",
+    },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+  const handleRedirect = (id: number) => {
+    navigate(`/blog/${id}`);
   };
 
   return (
-    <section className="gallery-section"id='Gallery'> 
-      <h2>Design Gallery</h2>
-      <div className="gallery-container">
-        <img src={images[currentIndex]} alt={`Gallery Image ${currentIndex + 1}`} className="gallery-image" />
-        <div className="button-container">
-          <button className="gallery-button" onClick={handlePrevious}>Previous</button>
-          <button className="gallery-button" onClick={handleNext}>Next</button>
-        </div>
+    <div className="blog-container">
+      <h1>Blog</h1>
+      <p>All Posts</p>
+      <div className="blog-grid">
+        {blogPosts.map((post) => (
+          <div
+            className="blog-card"
+            key={post.id}
+            onClick={() => handleRedirect(post.id)}
+          >
+            <img src={post.image} alt={post.title} />
+            <div className="blog-content">
+              <h3>{post.title}</h3>
+              <p className="blog-meta">
+                {post.author} | {post.date} | {post.readTime}
+              </p>
+              <p className="blog-description">{post.description}</p>
+              <p className="blog-views">{post.views} views</p>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Blog;

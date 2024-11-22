@@ -1,133 +1,149 @@
-/* Overall page styling */
-.about-page {
+/* Container and layout */
+.about {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #F3F3F3;
+  }
+  
+  /* Introduction section */
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .highlight {
+    color: #4a47a3;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* Social links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+  
+  .social-links a {
+    color: #555;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #e7e7ff;
+    transition: transform 0.3s ease, color 0.3s, background-color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #4a47a3;
+    background-color: #d4d4ff;
+    transform: translateY(-4px);
+  }
+  
+  /* Section titles */
+  h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #4a47a3;
+    margin: 8px auto 0;
+    border-radius: 5px;
+  }
+  
+  /* Skills section */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .skill {
+    background-color: #f0f4ff;
+    color: #4a47a3;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s;
+  }
+  
+  .skill:hover {
+    background-color: #dce3ff;
+    color: #333;
+  }
+  
+  /* Experience section */
+  .experience {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-}
-
-/* Profile card styling */
-.profile-card {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    padding: 40px;
-    text-align: center;
-    max-width: 600px;
+    gap: 24px;
     margin-bottom: 40px;
-}
-
-.profile-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-name {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.profile-title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-.profile-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Skills section */
-.skills-section {
-    width: 100%;
-    min-width: 300px;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.skill-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-}
-
-/* Individual skill styling */
-.skill {
-    margin:0px;
-    padding: 10px;
-    text-align: center;
-    background-color: #e0e0e0;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    color: #333;
-    max-height: 125px;
-    border-radius:5%;
-}
-
-.skill-name {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #444;
-    margin-bottom: 8px;
-    display: block;
-}
-
-.skill-bar {
-    background-color: #e0e0e0;
+  }
+  
+  .job {
+    padding: 20px;
+    background-color: #fff;
     border-radius: 8px;
-    overflow: hidden;
-    height: 10px;
-}
-
-.skill-progress {
-    background-color: #4caf50;
-    height: 100%;
-    width: 0;
-    transition: width 1s ease-in-out; /* Smooth progress bar animation */
-}
-
-/* Trigger the animation on page load */
-.skill-progress[style] {
-    width: inherit !important;
-}
-
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-    .profile-name {
-        font-size: 1.8rem;
-    }
-
-    .profile-title {
-        font-size: 1rem;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-    }
-
-    .profile-description, .skill-name {
-        font-size: 1rem;
-    }
-}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .job:hover {
+    transform: translateY(-4px);
+  }
+  
+  .job h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .company {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  
+  /* About text */
+  .about-text {
+    color: #555;
+    margin-bottom: 16px;
+    line-height: 1.7;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
